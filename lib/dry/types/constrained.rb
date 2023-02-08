@@ -16,7 +16,7 @@ module Dry
       # @param [Type] type
       # @param [Hash] options
       def initialize(type, options)
-        super
+        super(type, **options)
         @rule = options.fetch(:rule)
       end
 
